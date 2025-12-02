@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-orange-400 text-white">
+    <header class="bg-orange-500 shadow-lg">
+        <nav class="max-w-full mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-24">
+                <div class="flex justify-center">
+                    <a href="#">
+                        <img src="img/logo.png" class="w-24 h-24">   
+                    </a>
+                    <div class=" flex items-center space-x-8 h-24">
+                        <a href="principal.html" class="text-white px-3 py-2 text-base font-medium bg-orange-secondary rounded-lg transition duration-300 hover:scale-105">Início</a>
+                        <a href="cadastro.html" class="hover:text-gray px-3 py-2 text-base font-medium transition duration-300 hover:scale-105">Cadastro</a>
+                        <a href="estoque.html" class="hover:text-gray px-3 py-2 text-base font-medium transition duration-300 hover:scale-105">Gerenciamento de Estoque</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="py-8 px-4 sm:px-6 lg:px-8 bg-dark-background">
+        <h1 class="text-4xl font-bold mb-10">Dashboard</h1>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 mb-8">
+            <div class="text-center bg-content-area bg-orange-500 p-5 rounded-xl shadow-lg border-l-4 border-green-900 hover:scale-[1.03] transition duration-300 flex flex-col items-center justify-center">
+                <p class="text-white text-base font-medium truncate">Estoque</p>
+                <p class="text-3xl font-extrabold text-green-800 mt-1">15.000</p>
+                <p class="text-white text-sm mt-2">Volume total de refrigerantes</p>
+            </div>
+            <div class="text-center bg-content-area bg-orange-500 p-5 rounded-xl shadow-lg border-l-4 border-purple-800 hover:scale-[1.03] transition duration-300 flex flex-col items-center justify-center">
+                <p class="text-white text-base font-medium truncate">Itens em Falta</p>
+                <p class="text-3xl font-extrabold text-purple-800 mt-1">21</p>
+                <p class="text-white text-sm mt-2">Unidades abaixo do mínimo</p>
+            </div>
+            <div class="text-center bg-content-area bg-orange-500 p-5 rounded-xl shadow-lg border-l-4 border-red-800 hover:scale-[1.03] transition duration-300 flex flex-col items-center justify-center">
+                <p class="text-white text-sm font-medium truncate">Vendas do Ano(R$)</p>
+                <p class="text-3xl font-extrabold text-red-800 mt-1">3.450</p>
+                <p class="text-white text-sm mt-2">+12% em relação a ontem</p>
+            </div>
+            <div class="bg-content-area bg-orange-500 p-5 rounded-xl shadow-lg border-l-4 border-white hover:scale-[1.03] transition duration-300 flex flex-col items-center justify-center">
+                <p class="text-white text-sm font-medium truncate">Mais vendido</p>
+                <p class="text-3xl font-extrabold text-white mt-1">Fanta Laranja 2L</p>
+                <img src="img/2l.png" class="h-24">
+            </div> 
+            <div class="text-center bg-content-area bg-orange-500 p-5 rounded-xl shadow-lg border-l-4 border-green-900 hover:scale-[1.03] transition duration-300 flex flex-col items-center justify-center">
+                <p class="text-xl font-medium text-white mt-1">Fanta Guaraná</p>
+                <img src="img/guarana.png" class="w-56">
+            </div>
+            <div class="text-center bg-content-area bg-orange-500 p-5 rounded-xl shadow-lg border-l-4 border-purple-800 hover:scale-[1.03] transition duration-300 flex flex-col items-center justify-center">
+                <p class="text-xl font-medium text-white mt-1">Fanta Uva</p>
+                <img src="img/uva.png" class="w-56">
+            </div>
+            <div class="text-center bg-content-area bg-orange-500 p-5 rounded-xl shadow-lg border-l-4 border-red-800 hover:scale-[1.03] transition duration-300 flex flex-col items-center justify-center">
+                <p class="text-xl font-medium text-white mt-1">Fanta Caju</p>
+                <img src="img/caju.png" class="w-56">
+            </div>
+            <div class="text-center bg-content-area bg-orange-500 p-5 rounded-xl shadow-lg border-l-4 border-white hover:scale-[1.03] transition duration-300 flex flex-col items-center justify-center">
+                <p class="text-xl font-medium text-white mt-1">Fanta Laranja</p>
+                <img src="img/laranja.png" class="w-56">
+            </div>
+        </div>
+    </main>
+    <footer class="bg-content-area text-white py-10 mt-12">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 border-b border-orange-500 pb-8 mb-8"></div>
+        <div class="text-center text-sm md:col-span-2">
+            <p>&copy; 2025 Projeto Tailwind CSS - Fanta - Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

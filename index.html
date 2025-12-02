@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-orange-400 text-white">
+    <div class="flex min-h-screen">
+        <div class="w-full md:w-1/2 flex items-center justify-center px-10">
+            <div class="max-w-sm w-full">
+                <div class="mb-8">
+                    <h1 class="text-white font-bold text-4xl">Login</h1>
+                </div>
+                <form class="space-y-6" action="principal.html">
+                    <div>
+                        <label class="block text-base mb-2 font-bold">Endereço de Email</label>
+                        <input type="email" required class="w-full bg-orange-600 border border-orange-700 rounded-lg px-3 py-2 focus:outline-none focus:border-orange-500">
+                    </div>
+                    <div>
+                        <label class="block text-base mb-2 font-bold">Senha</label>
+                        <input type="password" required class="w-full bg-orange-600 border border-orange-700 rounded-lg px-3 py-2 focus:outline-none focus:border-orange-500">   
+                        <a href="#" class="text-orange-800 hover:underline">Esqueceu a senha?</a>
+                    </div>
+                    <button class="w-full bg-orange-600 hover:bg-orange-700 py-2 rounded-lg font-semibold transition transition duration-300 hover:scale-105">Entrar</button>   
+                </form>
+            </div>
+        </div>  
+        <div class="hidden md:block w-1/2 h-screen">
+            <img src="img/f.jpg" class="w-full h-full object-cover">
+        </div> 
+    </div>
+</body>
+</html>
