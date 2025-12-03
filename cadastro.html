@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-orange-400 text-white">
+    <header class="bg-orange-500 shadow-lg">
+        <nav class="max-w-full mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-24">
+                <div class="flex justify-center">
+                    <a href="#">
+                        <img src="img/logo.png" class="w-24 h-24">   
+                    </a>
+                    <div class=" flex items-center space-x-8 h-24">
+                        <a href="principal.html" class="text-white px-3 py-2 text-base font-medium bg-orange-secondary rounded-lg transition duration-300 hover:scale-105">Início</a>
+                        <a href="cadastro.html" class="hover:text-gray px-3 py-2 text-base font-medium transition duration-300 hover:scale-105">Cadastro</a>
+                        <a href="estoque.html" class="hover:text-gray px-3 py-2 text-base font-medium transition duration-300 hover:scale-105">Gerenciamento de Estoque</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="max-w-5xl mx-auto pt-12 pb-20 px-6">
+        <h2 class="text-4xl font-bold mb-10">Cadastro de Produtos</h2>
+        <div class="bg-orange-500 p-8 rounded-2xl shadow-xl transition-all duration-300 hover:scale-105 hover:shadow-2xl">
+            <form class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="flex flex-col">
+                    <label class="font-semibold mb-1">Nome do Produto</label>
+                    <input type="text" class="p-3 rounded-lg bg-orange-100 text-black focus:ring-2 focus:ring-blue-500 outline-none">
+                </div>
+                <div class="flex flex-col">
+                    <label class="font-semibold mb-1"">Categoria</label>
+                    <select class="p-3 rounded-lg bg-orange-100 text-black focus:ring-2 focus:ring-orange-500 outline-none appearance-none">
+                        <option>Garrafa de 200ml</option>
+                        <option>Lata de 350ml</option>
+                        <option>Garrafa de 600ml</option>
+                        <option>Garrafa de 1,5L</option>
+                        <option>Garrafa de 2L</option>
+                    </select>
+                </div>
+                <div class="flex flex-col">
+                    <label class="font-semibold mb-1">Código/SKU</label>
+                    <input type="text" class="p-3 rounded-lg bg-orange-100 text-black focus:ring-2 focus:ring-blue-500 outline-none">
+                </div>
+                <div class="flex flex-col">
+                    <label class="font-semibold mb-1">Quantidade</label>
+                    <input type="number" min="0" class="p-3 rounded-lg bg-orange-100 text-black focus:ring-2 focus:ring-blue-500 outline-none">
+                </div>
+                <div class="flex flex-col">
+                    <label class="font-semibold mb-1">Preço(R$)</label>
+                    <input type="number" min="0" step="0.01" class="p-3 rounded-lg bg-orange-100 text-black focus:ring-2 focus:ring-blue-500 outline-none">
+                </div>
+                <div class="flex flex-col">
+                    <label class="font-semibold mb-1">Descrição</label>
+                    <textarea rows="1" class="p-3 rounded-lg bg-orange-100 text-black focus:ring-2 focus:ring-blue-500 outline-none"></textarea>
+                </div>
+                <div class="flex gap-4 md:col-span-2 mt-6 justify-center">
+                    <button type="submit" class="bg-green-800 hover:bg-green-900 px-6 py-3 rounded-xl font-semibold shadow-md transition transition duration-300 hover:scale-105">Salvar</button>
+                    <button type="reset" class="bg-purple-700 hover:bg-purple-800 px-6 py-3 rounded-xl font-semibold shadow-md transition transition duration-300 hover:scale-105">Limpar</button>
+                    <a href="principal.html" class="bg-red-700 hover:bg-red-800 px-6 py-3 rounded-xl font-semibold shadow-md transition transition duration-300 hover:scale-105">Cancelar</a>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer class="bg-content-area text-white py-2 mt-2">
+        <div class="border-t-2 border-orange-500 mb-4">
+            <p class="text-center text-sm opacity-80 mt-4">&copy; 2025 Projeto Tailwind CSS - Fanta - Todos os direitos reservados.</p>
+        </div>
+    </footer>  
+</body>
+</html>
